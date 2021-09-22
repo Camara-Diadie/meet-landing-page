@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
+html {
+  height: 1895px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header img {
+  margin-top: 80px;
+  width: 119px;
+  height: 28px;
+}
+
+article.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 358px;
+}
+
+article.group img {
+  width: 250px;
+}
+
+article.group .group-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 304px;
+  width: 540px;
+  text-align: center;
+}
+
+article.group .group-chat .text-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article.group .group-chat .text-chat h1 {
+  width: 445px;
+  height: 128px;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 64px;
+  color: #28283d;
+}
+
+article.group .group-chat .text-chat p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+  color: #87879d;
+  width: 540px;
+  height: 52px;
+}
+
+article.group .group-chat .button-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 348px;
+  height: 58px;
+}
+
+article.group .group-chat .button-chat button {
+  margin: auto;
+}
+
+article.group .group-chat .button-chat button.download {
+  background-color: #4d96a9;
+  width: 193px;
+  height: 58px;
+  color: #fafafa;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 29px;
+  border-style: none;
+}
+
+article.group .group-chat .button-chat button.download span {
+  color: #8fe3f9;
+}
+
+article.group .group-chat .what {
+  background-color: #855fb1;
+  width: 139px;
+  height: 58px;
+  color: #fafafa;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 29px;
+  border-style: none;
+}
+
+article.group .group-chat .what span {
+  color: #8fe3f9;
+}
+/*# sourceMappingURL=style.css.map */

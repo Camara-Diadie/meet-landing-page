@@ -1,0 +1,109 @@
+//variable
+$bleu-turqoise: #4d96a9;
+$bleu-turqoise-clair: #8fe3f9;
+$bleu-adroise: #855fb1;
+$bleu-adroise-clair: #d9b8ff;
+$bleu-gris: #28283d;
+$gris: #87879d;
+$blanc: #fafafa;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
+
+html {
+  // width: 1440px;
+  height: 1895px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    margin-top: 80px;
+    width: 119px;
+    height: 28px;
+  }
+}
+article.group {
+  img {
+    width: 250px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 358px;
+
+  .group-chat {
+    // margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 304px;
+    width: 540px;
+    text-align: center;
+    // justify-content: space-between;
+
+    .text-chat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        width: 445px;
+        height: 128px;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 64px;
+        color: $bleu-gris;
+      }
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        font-style: normal;
+        color: $gris;
+        width: 540px;
+        height: 52px;
+      }
+    }
+    .button-chat {
+      display: flex;
+      width: 348px;
+      height: 58px;
+      button {
+        margin: auto;
+      }
+
+      button.download {
+        background-color: $bleu-turqoise;
+        width: 193px;
+        height: 58px;
+        color: $blanc;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 26px;
+        border-radius: 29px;
+        border-style: none;
+
+        span {
+          color: $bleu-turqoise-clair;
+        }
+      }
+    }
+    .what {
+      background-color: $bleu-adroise;
+      width: 139px;
+      height: 58px;
+      color: $blanc;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 26px;
+      border-radius: 29px;
+      border-style: none;
+      span {
+        color: $bleu-turqoise-clair;
+      }
+    }
+  }
+}
