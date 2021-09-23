@@ -1,10 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
 html {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
   height: 1895px;
   font-family: "Red Hat Display", sans-serif;
+  position: absolute;
 }
 
-header {
+html main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html main header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,13 +39,19 @@ header {
       justify-content: space-around;
 }
 
-header img {
+html main header img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 80px;
   width: 119px;
   height: 28px;
 }
 
-article.group {
+html main article.group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,13 +62,11 @@ article.group {
       -ms-flex-align: center;
           align-items: center;
   height: 358px;
+  width: 1504px;
+  margin-left: -42px;
 }
 
-article.group img {
-  width: 250px;
-}
-
-article.group .group-chat {
+html main article.group .group-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,9 +80,12 @@ article.group .group-chat {
   height: 304px;
   width: 540px;
   text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-article.group .group-chat .text-chat {
+html main article.group .group-chat .text-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +98,7 @@ article.group .group-chat .text-chat {
           align-items: center;
 }
 
-article.group .group-chat .text-chat h1 {
+html main article.group .group-chat .text-chat h1 {
   width: 445px;
   height: 128px;
   font-weight: 900;
@@ -80,7 +107,7 @@ article.group .group-chat .text-chat h1 {
   color: #28283d;
 }
 
-article.group .group-chat .text-chat p {
+html main article.group .group-chat .text-chat p {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
@@ -90,7 +117,7 @@ article.group .group-chat .text-chat p {
   height: 52px;
 }
 
-article.group .group-chat .button-chat {
+html main article.group .group-chat .button-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,11 +125,11 @@ article.group .group-chat .button-chat {
   height: 58px;
 }
 
-article.group .group-chat .button-chat button {
+html main article.group .group-chat .button-chat button {
   margin: auto;
 }
 
-article.group .group-chat .button-chat button.download {
+html main article.group .group-chat .button-chat button.download {
   background-color: #4d96a9;
   width: 193px;
   height: 58px;
@@ -114,11 +141,11 @@ article.group .group-chat .button-chat button.download {
   border-style: none;
 }
 
-article.group .group-chat .button-chat button.download span {
+html main article.group .group-chat .button-chat button.download span {
   color: #8fe3f9;
 }
 
-article.group .group-chat .what {
+html main article.group .group-chat .what {
   background-color: #855fb1;
   width: 139px;
   height: 58px;
@@ -130,7 +157,93 @@ article.group .group-chat .what {
   border-style: none;
 }
 
-article.group .group-chat .what span {
+html main article.group .group-chat .what span {
   color: #8fe3f9;
+}
+
+html main article.seconde-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 150px;
+}
+
+html main article.seconde-part .one {
+  width: 56px;
+  height: 140px;
+}
+
+html main article.seconde-part .one .trait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main article.seconde-part .one .trait p:nth-child(1) {
+  width: 1px;
+  height: 84px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border: 1px solid #87879d;
+  margin-bottom: -16px;
+  text-align: center;
+  background-color: #87879d;
+  border-radius: none;
+}
+
+html main article.seconde-part .one .trait p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 29px;
+  color: #87879d;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+html main article.seconde-part .img-second-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1110px;
+  height: 242px;
+  top: 841px;
+  position: absolute;
+}
+
+html main article.seconde-part .img-second-part img {
+  background: #d8d8d8;
+  border-radius: 8px;
+  height: 242px;
+  width: 255px;
 }
 /*# sourceMappingURL=style.css.map */

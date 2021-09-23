@@ -9,100 +9,177 @@ $blanc: #fafafa;
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
 
 html {
-  // width: 1440px;
+  margin: 0;
+  padding: 0;
+  width: 1440px;
   height: 1895px;
   font-family: "Red Hat Display", sans-serif;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
-  img {
-    margin-top: 80px;
-    width: 119px;
-    height: 28px;
-  }
-}
-article.group {
-  img {
-    width: 250px;
-  }
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 358px;
-
-  .group-chat {
-    // margin: 40px;
+  position: absolute;
+  main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 304px;
-    width: 540px;
-    text-align: center;
-    // justify-content: space-between;
+    justify-content: space-between;
 
-    .text-chat {
+    header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      h1 {
-        width: 445px;
-        height: 128px;
-        font-weight: 900;
-        font-size: 64px;
-        line-height: 64px;
-        color: $bleu-gris;
-      }
-      p {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        font-style: normal;
-        color: $gris;
-        width: 540px;
-        height: 52px;
+      justify-content: space-around;
+
+      img {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        width: 119px;
+        height: 28px;
       }
     }
-    .button-chat {
+    article.group {
       display: flex;
-      width: 348px;
-      height: 58px;
-      button {
-        margin: auto;
-      }
+      justify-content: space-between;
+      align-items: center;
+      height: 358px;
+      width: 1504px; // désactiver si trop grand pour navigateur
+      margin-left: -42px;
+      // .img-left {
+      //   background: no-repeat center / contain
+      //     url(../assets/desktop/image-hero-left.png);
+      //   width: 100%;
+      //   height: 100%;
+      // }
+      // .img-right {
+      //   background: no-repeat center / contain
+      //     url(../assets/desktop/image-hero-right.png);
+      //   width: 100%;
+      //   height: 100%;
+      // }
 
-      button.download {
-        background-color: $bleu-turqoise;
-        width: 193px;
-        height: 58px;
-        color: $blanc;
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 26px;
-        border-radius: 29px;
-        border-style: none;
+      .group-chat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 304px;
+        width: 540px;
+        text-align: center;
+        justify-content: space-between;
 
-        span {
-          color: $bleu-turqoise-clair;
+        .text-chat {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            width: 445px;
+            height: 128px;
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 64px;
+            color: $bleu-gris;
+          }
+          p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            font-style: normal;
+            color: $gris;
+            width: 540px;
+            height: 52px;
+          }
+        }
+        .button-chat {
+          display: flex;
+          width: 348px;
+          height: 58px;
+          button {
+            margin: auto;
+          }
+
+          button.download {
+            background-color: $bleu-turqoise;
+            width: 193px;
+            height: 58px;
+            color: $blanc;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 26px;
+            border-radius: 29px;
+            border-style: none;
+
+            span {
+              color: $bleu-turqoise-clair;
+            }
+          }
+        }
+        .what {
+          background-color: $bleu-adroise;
+          width: 139px;
+          height: 58px;
+          color: $blanc;
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 26px;
+          border-radius: 29px;
+          border-style: none;
+          span {
+            color: $bleu-turqoise-clair;
+          }
         }
       }
     }
-    .what {
-      background-color: $bleu-adroise;
-      width: 139px;
-      height: 58px;
-      color: $blanc;
-      font-weight: 900;
-      font-size: 16px;
-      line-height: 26px;
-      border-radius: 29px;
-      border-style: none;
-      span {
-        color: $bleu-turqoise-clair;
+    article.seconde-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 150px;
+      // partie ou ya le trait et le chiffre 01 entouret
+      .one {
+        width: 56px;
+        height: 140px;
+
+        .trait {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          p:nth-child(1) {
+            width: 1px;
+            height: 84px;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            border: 1px solid #87879d;
+            margin-bottom: -16px;
+            text-align: center;
+            background-color: #87879d;
+            border-radius: none;
+          }
+          p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 56px;
+            height: 56px;
+            border: 1px solid rgba(135, 135, 157, 0.25);
+            box-sizing: border-box;
+            border-radius: 29px;
+            color: #87879d;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+      .img-second-part {
+        display: flex;
+        justify-content: space-between;
+        width: 1110px;
+        height: 242px;
+        top: 841px;
+        position: absolute;
+        img {
+          background: #d8d8d8;
+          border-radius: 8px;
+          height: 242px;
+          width: 255px;
+        }
       }
     }
   }
