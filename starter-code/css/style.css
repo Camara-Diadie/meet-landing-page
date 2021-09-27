@@ -5,7 +5,6 @@ html {
   width: 1440px;
   height: 1895px;
   font-family: "Red Hat Display", sans-serif;
-  position: absolute;
 }
 
 html main {
@@ -19,9 +18,6 @@ html main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 html main header {
@@ -35,8 +31,7 @@ html main header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-top: 80px;
 }
 
 html main header img {
@@ -46,7 +41,6 @@ html main header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
   width: 119px;
   height: 28px;
 }
@@ -63,7 +57,11 @@ html main article.group {
           align-items: center;
   height: 358px;
   width: 1504px;
-  margin-left: -42px;
+  margin-top: 169px;
+}
+
+html main article.group .img-right {
+  padding-right: -20px;
 }
 
 html main article.group .group-chat {
@@ -83,6 +81,8 @@ html main article.group .group-chat {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 html main article.group .group-chat .text-chat {
@@ -172,15 +172,18 @@ html main article.seconde-part {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-html main article.seconde-part .one {
+html main article.seconde-part .un {
   width: 56px;
   height: 140px;
+  margin-top: 110px;
 }
 
-html main article.seconde-part .one .trait {
+html main article.seconde-part .un .trait-un {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +196,7 @@ html main article.seconde-part .one .trait {
           align-items: center;
 }
 
-html main article.seconde-part .one .trait p:nth-child(1) {
+html main article.seconde-part .un .trait-un p:nth-child(1) {
   width: 1px;
   height: 84px;
   mix-blend-mode: normal;
@@ -205,7 +208,7 @@ html main article.seconde-part .one .trait p:nth-child(1) {
   border-radius: none;
 }
 
-html main article.seconde-part .one .trait p {
+html main article.seconde-part .un .trait-un p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,8 +239,7 @@ html main article.seconde-part .img-second-part {
           justify-content: space-between;
   width: 1110px;
   height: 242px;
-  top: 841px;
-  position: absolute;
+  margin-top: 64px;
 }
 
 html main article.seconde-part .img-second-part img {
@@ -245,5 +247,166 @@ html main article.seconde-part .img-second-part img {
   border-radius: 8px;
   height: 242px;
   width: 255px;
+}
+
+html main article.seconde-part div.text-second-part {
+  width: 540px;
+  height: 240px;
+  text-align: center;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main article.seconde-part div.text-second-part p:nth-child(1) {
+  color: #4d96a9;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  width: 271px;
+  height: 26px;
+  text-align: center;
+}
+
+html main article.seconde-part div.text-second-part p:nth-child(2) {
+  width: 445px;
+  height: 88px;
+  color: #28283d;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  margin-top: 16px;
+}
+
+html main article.seconde-part div.text-second-part p:nth-child(3) {
+  width: 540px;
+  height: 78px;
+  color: #87879d;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 32px;
+}
+
+html main article.seconde-part .deux {
+  width: 56px;
+  height: 140px;
+  margin-top: 156px;
+}
+
+html main article.seconde-part .deux .trait-deux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main article.seconde-part .deux .trait-deux p:nth-child(1) {
+  width: 1px;
+  height: 84px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border: 1px solid #87879d;
+  margin-bottom: -16px;
+  text-align: center;
+  background-color: #87879d;
+  border-radius: none;
+}
+
+html main article.seconde-part .deux .trait-deux p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 29px;
+  color: #87879d;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #fafafa;
+  z-index: 1;
+}
+
+html main footer {
+  width: 1440px;
+  height: 308px;
+  background-image: url(/starter-code/assets/desktop/image-footer.jpg);
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+  color: #fafafa;
+}
+
+html main footer .text-footer {
+  background-color: rgba(77, 151, 169, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main footer .text-footer h4 {
+  width: 350px;
+  height: 88px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  margin: 116px 125px 104px 165px;
+}
+
+html main footer .text-footer p {
+  width: 350px;
+  height: 78px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 116px 0px 114px 0px;
+}
+
+html main footer .text-footer button {
+  width: 193px;
+  height: 58px;
+  font-weight: 900;
+  color: #fafafa;
+  background: #855fb1;
+  font-size: 16px;
+  list-style: 26px;
+  border-radius: 29px;
+  border-style: none;
+  margin: 131px 165px 119px 92px;
+}
+
+html main footer .text-footer button span {
+  color: #d9b8ff;
 }
 /*# sourceMappingURL=style.css.map */
