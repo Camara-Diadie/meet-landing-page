@@ -1,51 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
-html {
+html,
+body {
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: visible;
+}
+
+html main,
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1440px;
   height: 1895px;
-  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
 }
 
-html main {
+html main header,
+body main header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-html main header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 80px;
 }
 
-html main header img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+html main header img,
+body main header img {
   width: 119px;
   height: 28px;
 }
 
-html main article.group {
+html main article.group,
+body main article.group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,16 +49,13 @@ html main article.group {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 358px;
   width: 1504px;
-  margin-top: 169px;
+  height: 358px;
+  margin-top: 61px;
 }
 
-html main article.group .img-right {
-  padding-right: -20px;
-}
-
-html main article.group .group-chat {
+html main article.group .group-chat,
+body main article.group .group-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,11 +72,12 @@ html main article.group .group-chat {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 88px;
+  margin-right: 88px;
 }
 
-html main article.group .group-chat .text-chat {
+html main article.group .group-chat .text-chat,
+body main article.group .group-chat .text-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +90,8 @@ html main article.group .group-chat .text-chat {
           align-items: center;
 }
 
-html main article.group .group-chat .text-chat h1 {
+html main article.group .group-chat .text-chat h1,
+body main article.group .group-chat .text-chat h1 {
   width: 445px;
   height: 128px;
   font-weight: 900;
@@ -107,7 +100,8 @@ html main article.group .group-chat .text-chat h1 {
   color: #28283d;
 }
 
-html main article.group .group-chat .text-chat p {
+html main article.group .group-chat .text-chat p,
+body main article.group .group-chat .text-chat p {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
@@ -117,19 +111,23 @@ html main article.group .group-chat .text-chat p {
   height: 52px;
 }
 
-html main article.group .group-chat .button-chat {
+html main article.group .group-chat .button-chat,
+body main article.group .group-chat .button-chat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 348px;
   height: 58px;
+  margin: 32px;
 }
 
-html main article.group .group-chat .button-chat button {
+html main article.group .group-chat .button-chat button,
+body main article.group .group-chat .button-chat button {
   margin: auto;
 }
 
-html main article.group .group-chat .button-chat button.download {
+html main article.group .group-chat .button-chat button.download,
+body main article.group .group-chat .button-chat button.download {
   background-color: #4d96a9;
   width: 193px;
   height: 58px;
@@ -141,11 +139,18 @@ html main article.group .group-chat .button-chat button.download {
   border-style: none;
 }
 
-html main article.group .group-chat .button-chat button.download span {
+html main article.group .group-chat .button-chat button.download:hover,
+body main article.group .group-chat .button-chat button.download:hover {
+  background-color: #71c0d4;
+}
+
+html main article.group .group-chat .button-chat button.download span,
+body main article.group .group-chat .button-chat button.download span {
   color: #8fe3f9;
 }
 
-html main article.group .group-chat .what {
+html main article.group .group-chat .what,
+body main article.group .group-chat .what {
   background-color: #855fb1;
   width: 139px;
   height: 58px;
@@ -157,33 +162,20 @@ html main article.group .group-chat .what {
   border-style: none;
 }
 
-html main article.group .group-chat .what span {
-  color: #8fe3f9;
+html main article.group .group-chat .what:hover,
+body main article.group .group-chat .what:hover {
+  background-color: #b18bdd;
 }
 
-html main article.seconde-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-html main article.seconde-part .un {
+html main .un,
+body main .un {
   width: 56px;
   height: 140px;
   margin-top: 110px;
 }
 
-html main article.seconde-part .un .trait-un {
+html main .un .trait-un,
+body main .un .trait-un {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +188,8 @@ html main article.seconde-part .un .trait-un {
           align-items: center;
 }
 
-html main article.seconde-part .un .trait-un p:nth-child(1) {
+html main .un .trait-un p:nth-child(1),
+body main .un .trait-un p:nth-child(1) {
   width: 1px;
   height: 84px;
   mix-blend-mode: normal;
@@ -208,7 +201,8 @@ html main article.seconde-part .un .trait-un p:nth-child(1) {
   border-radius: none;
 }
 
-html main article.seconde-part .un .trait-un p {
+html main .un .trait-un p,
+body main .un .trait-un p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +224,8 @@ html main article.seconde-part .un .trait-un p {
   line-height: 26px;
 }
 
-html main article.seconde-part .img-second-part {
+html main .img-planch,
+body main .img-planch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,14 +237,33 @@ html main article.seconde-part .img-second-part {
   margin-top: 64px;
 }
 
-html main article.seconde-part .img-second-part img {
+html main .img-planch img,
+body main .img-planch img {
   background: #d8d8d8;
   border-radius: 8px;
   height: 242px;
   width: 255px;
 }
 
-html main article.seconde-part div.text-second-part {
+html main article.seconde-part,
+body main article.seconde-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html main article.seconde-part div.text-second-part,
+body main article.seconde-part div.text-second-part {
   width: 540px;
   height: 240px;
   text-align: center;
@@ -266,7 +280,8 @@ html main article.seconde-part div.text-second-part {
           align-items: center;
 }
 
-html main article.seconde-part div.text-second-part p:nth-child(1) {
+html main article.seconde-part div.text-second-part p:nth-child(1),
+body main article.seconde-part div.text-second-part p:nth-child(1) {
   color: #4d96a9;
   font-weight: 900;
   font-size: 16px;
@@ -277,7 +292,8 @@ html main article.seconde-part div.text-second-part p:nth-child(1) {
   text-align: center;
 }
 
-html main article.seconde-part div.text-second-part p:nth-child(2) {
+html main article.seconde-part div.text-second-part h2,
+body main article.seconde-part div.text-second-part h2 {
   width: 445px;
   height: 88px;
   color: #28283d;
@@ -287,23 +303,27 @@ html main article.seconde-part div.text-second-part p:nth-child(2) {
   margin-top: 16px;
 }
 
-html main article.seconde-part div.text-second-part p:nth-child(3) {
+html main article.seconde-part div.text-second-part p:nth-child(3),
+body main article.seconde-part div.text-second-part p:nth-child(3) {
   width: 540px;
   height: 78px;
   color: #87879d;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   margin-top: 32px;
 }
 
-html main article.seconde-part .deux {
+html main .deux,
+body main .deux {
   width: 56px;
   height: 140px;
-  margin-top: 156px;
+  margin-top: 72px;
 }
 
-html main article.seconde-part .deux .trait-deux {
+html main .deux .trait-deux,
+body main .deux .trait-deux {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +336,8 @@ html main article.seconde-part .deux .trait-deux {
           align-items: center;
 }
 
-html main article.seconde-part .deux .trait-deux p:nth-child(1) {
+html main .deux .trait-deux p:nth-child(1),
+body main .deux .trait-deux p:nth-child(1) {
   width: 1px;
   height: 84px;
   mix-blend-mode: normal;
@@ -326,9 +347,11 @@ html main article.seconde-part .deux .trait-deux p:nth-child(1) {
   text-align: center;
   background-color: #87879d;
   border-radius: none;
+  margin-top: 27px;
 }
 
-html main article.seconde-part .deux .trait-deux p {
+html main .deux .trait-deux p,
+body main .deux .trait-deux p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +375,8 @@ html main article.seconde-part .deux .trait-deux p {
   z-index: 1;
 }
 
-html main footer {
+html main footer,
+body main footer {
   width: 1440px;
   height: 308px;
   background-image: url(/starter-code/assets/desktop/image-footer.jpg);
@@ -361,7 +385,8 @@ html main footer {
   color: #fafafa;
 }
 
-html main footer .text-footer {
+html main footer .text-footer,
+body main footer .text-footer {
   background-color: rgba(77, 151, 169, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,7 +400,8 @@ html main footer .text-footer {
           align-items: center;
 }
 
-html main footer .text-footer h4 {
+html main footer .text-footer h4,
+body main footer .text-footer h4 {
   width: 350px;
   height: 88px;
   font-weight: 900;
@@ -384,7 +410,8 @@ html main footer .text-footer h4 {
   margin: 116px 125px 104px 165px;
 }
 
-html main footer .text-footer p {
+html main footer .text-footer p,
+body main footer .text-footer p {
   width: 350px;
   height: 78px;
   font-weight: 500;
@@ -393,7 +420,8 @@ html main footer .text-footer p {
   margin: 116px 0px 114px 0px;
 }
 
-html main footer .text-footer button {
+html main footer .text-footer button,
+body main footer .text-footer button {
   width: 193px;
   height: 58px;
   font-weight: 900;
@@ -406,7 +434,13 @@ html main footer .text-footer button {
   margin: 131px 165px 119px 92px;
 }
 
-html main footer .text-footer button span {
+html main footer .text-footer button:hover,
+body main footer .text-footer button:hover {
+  background-color: #b18bdd;
+}
+
+html main footer .text-footer button span,
+body main footer .text-footer button span {
   color: #d9b8ff;
 }
 /*# sourceMappingURL=style.css.map */
