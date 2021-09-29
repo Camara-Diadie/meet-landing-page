@@ -23,9 +23,20 @@ body {
     height: 1895px;
     overflow: hidden;
 
+    //media query tablette
+    @media screen and(max-width: 768px) {
+      width: 768px;
+      height: 2128px;
+      // overflow: visible;
+    }
+
+    ///
     header {
       display: flex;
       margin-top: 80px;
+      @media screen and (width: 768px) {
+        margin-top: 48px;
+      }
       img {
         width: 119px;
         height: 28px;
@@ -38,6 +49,47 @@ body {
       width: 1504px;
       height: 358px;
       margin-top: 61px;
+      // overflow: ;
+      & :nth-child(1) {
+        order: 1;
+      }
+      & :nth-child(2) {
+        order: 3;
+      }
+      & :nth-child(3) {
+        order: 2;
+      }
+      // media query tablette
+      @media (max-width: 768px) {
+        margin-top: 64px;
+        width: 820px;
+        height: 565px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        & :nth-child(1) {
+          order: 1;
+          // flex: 2;
+          width: 394px;
+          height: 303px;
+          // margin-right: 32px;
+        }
+        & :nth-child(2) {
+          order: 2;
+          width: 394px;
+          height: 303px;
+          margin-left: 32px;
+
+          // flex: 2;
+        }
+        & :nth-child(3) {
+          order: 3;
+          margin-top: 72px;
+          width: 457px;
+          height: 262px;
+          // flex: 1;
+        }
+      }
       .group-chat {
         display: flex;
         flex-direction: column;
@@ -48,7 +100,11 @@ body {
         justify-content: space-between;
         margin-left: 88px;
         margin-right: 88px;
-
+        @media screen and (width: 768px) {
+          width: 457px;
+          height: 262px;
+          margin-top: 72px;
+        }
         .text-chat {
           display: flex;
           flex-direction: column;
@@ -60,6 +116,12 @@ body {
             font-size: 64px;
             line-height: 64px;
             color: $bleu-gris;
+            @media screen and (width: 768px) {
+              width: 339px;
+              height: 96px;
+              font-size: 48px;
+              line-height: 48px;
+            }
           }
           p {
             font-weight: 500;
@@ -69,13 +131,23 @@ body {
             color: $gris;
             width: 540px;
             height: 52px;
+            @media screen and (width: 768px) {
+              width: 457px;
+              height: 52px;
+              font-size: 16px;
+              line-height: 26px;
+              margin-top: 24px;
+            }
           }
         }
         .button-chat {
           display: flex;
           width: 348px;
           height: 58px;
-          margin: 32px;
+
+          @media screen and (width: 768px) {
+            // margin: 16px;
+          }
           button {
             margin: auto;
           }
@@ -118,6 +190,9 @@ body {
       width: 56px;
       height: 140px;
       margin-top: 110px;
+      @media screen and (width: 768px) {
+        margin-top: 152px;
+      }
       .trait-un {
         display: flex;
         flex-direction: column;
@@ -155,11 +230,19 @@ body {
       width: 1110px;
       height: 242px;
       margin-top: 64px;
+      @media screen and (width: 768px) {
+        width: 689px;
+        height: 156px;
+      }
       img {
         background: #d8d8d8;
         border-radius: 8px;
         height: 242px;
         width: 255px;
+        @media screen and (width: 768px) {
+          width: 164px;
+          height: 156px;
+        }
       }
     }
     article.seconde-part {
@@ -177,6 +260,12 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        @media screen and (width: 768px) {
+          width: 573px;
+          height: 240px;
+          margin-top: 48px;
+        }
         p:nth-child(1) {
           color: #4d96a9;
           font-weight: 900;
@@ -205,6 +294,11 @@ body {
           line-height: 26px;
           text-align: center;
           margin-top: 32px;
+          @media screen and (width: 768px) {
+            width: 573px;
+            height: 78px;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -255,12 +349,21 @@ body {
       background-repeat: no-repeat;
       mix-blend-mode: normal;
       color: #fafafa;
-
+      @media screen and (width: 768px) {
+        // width: 1440px;
+        // height: 960px;
+        // background-size: cover;
+      }
       .text-footer {
         background-color: rgba(77, 151, 169, 0.8);
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media screen and (width: 768px) {
+          flex-direction: column;
+          // width: 768px;
+          height: 428px;
+        }
 
         h4 {
           width: 350px;
@@ -268,7 +371,12 @@ body {
           font-weight: 900;
           font-size: 40px;
           line-height: 44px;
-          margin: 116px 125px 104px 165px;
+          // margin: 116px 125px 104px 165px;
+          @media screen and (width: 768px) {
+            width: 457px;
+            // margin-top: 64px;
+            text-align: center;
+          }
         }
         p {
           width: 350px;
@@ -276,7 +384,12 @@ body {
           font-weight: 500;
           font-size: 18px;
           line-height: 26px;
-          margin: 116px 0px 114px 0px;
+          // margin: 116px 0px 114px 0px;
+          @media screen and (width: 768px) {
+            width: 573px;
+            text-align: center;
+            margin-top: 32px;
+          }
         }
         button {
           width: 193px;
@@ -288,7 +401,13 @@ body {
           list-style: 26px;
           border-radius: 29px;
           border-style: none;
-          margin: 131px 165px 119px 92px;
+          // margin: 131px 165px 119px 92px;
+          @media screen and (width: 768px) {
+            width: 193px;
+            // margin-top: 58px;
+            text-align: center;
+            // margin-top: 64px;
+          }
           &:hover {
             background-color: #b18bdd;
           }
