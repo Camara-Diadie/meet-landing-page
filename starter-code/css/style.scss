@@ -1,42 +1,46 @@
-//variable
-$bleu-turqoise: #4d96a9;
-$bleu-turqoise-clair: #8fe3f9;
-$bleu-adroise: #855fb1;
-$bleu-adroise-clair: #d9b8ff;
-$bleu-gris: #28283d;
-$gris: #87879d;
-$blanc: #fafafa;
+$bleu-turqoise:#4d96a9;
+$bleu-turqoise-clair:#8fe3f9;
+$bleu-adroise:#855fb1;
+$bleu-adroise-clair:#d9b8ff;
+$bleu-gris:#28283d;
+$gris:#87879d;
+$blanc:#fafafa;
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
-
+// media desktop 1440px
+// media query tablette 768px
+// media query mobile 375px
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
-  overflow: visible;
-
+  margin-left: auto;
+  margin-right: auto;
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 1440px;
     height: 1895px;
     overflow: hidden;
 
-    //media query tablette
     @media screen and(max-width: 768px) {
       width: 768px;
       height: 2128px;
-      // overflow: visible;
     }
-
-    ///
+    @media screen and(max-width: 375px) {
+      width: 375px;
+      height: 2215px;
+      justify-content: none;
+    }
     header {
       display: flex;
       margin-top: 80px;
       @media screen and (width: 768px) {
         margin-top: 48px;
       }
+
       img {
         width: 119px;
         height: 28px;
@@ -49,7 +53,6 @@ body {
       width: 1504px;
       height: 358px;
       margin-top: 61px;
-      // overflow: ;
       & :nth-child(1) {
         order: 1;
       }
@@ -59,7 +62,7 @@ body {
       & :nth-child(3) {
         order: 2;
       }
-      // media query tablette
+
       @media (max-width: 768px) {
         margin-top: 64px;
         width: 820px;
@@ -69,25 +72,44 @@ body {
         flex-wrap: wrap;
         & :nth-child(1) {
           order: 1;
-          // flex: 2;
           width: 394px;
           height: 303px;
-          // margin-right: 32px;
         }
         & :nth-child(2) {
           order: 2;
           width: 394px;
           height: 303px;
           margin-left: 32px;
-
-          // flex: 2;
         }
         & :nth-child(3) {
           order: 3;
           margin-top: 72px;
           width: 457px;
           height: 262px;
-          // flex: 1;
+        }
+      }
+      @media (max-width: 375px) {
+        margin-top: 54px;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        & :nth-child(1) {
+          order: 1;
+          width: 199px;
+          height: 153px;
+        }
+        & :nth-child(2) {
+          order: 2;
+          width: 199px;
+          height: 153px;
+          margin-left: 16px;
+        }
+        & :nth-child(3) {
+          order: 3;
+          width: 327px;
+          height: 88px;
         }
       }
       .group-chat {
@@ -97,13 +119,19 @@ body {
         height: 304px;
         width: 540px;
         text-align: center;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-left: 88px;
         margin-right: 88px;
         @media screen and (width: 768px) {
           width: 457px;
           height: 262px;
           margin-top: 72px;
+        }
+        @media screen and (width: 375px) {
+          margin-top: 48px;
+          width: 375px;
+          height: auto;
+          justify-content: none;
         }
         .text-chat {
           display: flex;
@@ -122,6 +150,12 @@ body {
               font-size: 48px;
               line-height: 48px;
             }
+            @media screen and (width: 375px) {
+              width: 327px;
+              height: 88px;
+              font-size: 40px;
+              line-height: 44px;
+            }
           }
           p {
             font-weight: 500;
@@ -138,6 +172,13 @@ body {
               line-height: 26px;
               margin-top: 24px;
             }
+            @media screen and (width: 375px) {
+              width: 327px;
+              height: 78px;
+              font-size: 16px;
+              line-height: 26px;
+              margin-top: 24px;
+            }
           }
         }
         .button-chat {
@@ -145,8 +186,12 @@ body {
           width: 348px;
           height: 58px;
 
-          @media screen and (width: 768px) {
-            // margin: 16px;
+          @media screen and (width: 375px) {
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 134px;
+            width: auto;
+            height: auto;
           }
           button {
             margin: auto;
@@ -162,6 +207,7 @@ body {
             line-height: 26px;
             border-radius: 29px;
             border-style: none;
+
             &:hover {
               background-color: #71c0d4;
             }
@@ -170,7 +216,7 @@ body {
             }
           }
         }
-        .what {
+        button.what {
           background-color: $bleu-adroise;
           width: 139px;
           height: 58px;
@@ -180,6 +226,9 @@ body {
           line-height: 26px;
           border-radius: 29px;
           border-style: none;
+          @media screen and (width: 375px) {
+            margin-top: 16px;
+          }
           &:hover {
             background-color: #b18bdd;
           }
@@ -192,6 +241,9 @@ body {
       margin-top: 110px;
       @media screen and (width: 768px) {
         margin-top: 152px;
+      }
+      @media screen and (width: 375px) {
+        margin-top: 64px;
       }
       .trait-un {
         display: flex;
@@ -234,6 +286,11 @@ body {
         width: 689px;
         height: 156px;
       }
+      @media screen and (width: 375px) {
+        width: 327px;
+        height: 310px;
+        flex-wrap: wrap;
+      }
       img {
         background: #d8d8d8;
         border-radius: 8px;
@@ -242,6 +299,10 @@ body {
         @media screen and (width: 768px) {
           width: 164px;
           height: 156px;
+        }
+        @media screen and (width: 375px) {
+          width: 151px;
+          height: 143px;
         }
       }
     }
@@ -266,6 +327,11 @@ body {
           height: 240px;
           margin-top: 48px;
         }
+        @media screen and (width: 375px) {
+          width: 327px;
+          height: 284px;
+          margin-top: 48px;
+        }
         p:nth-child(1) {
           color: #4d96a9;
           font-weight: 900;
@@ -284,6 +350,13 @@ body {
           font-size: 40px;
           line-height: 44px;
           margin-top: 16px;
+          @media screen and (width: 375px) {
+            width: 327px;
+            height: 72px;
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+          }
         }
         p:nth-child(3) {
           width: 540px;
@@ -299,6 +372,11 @@ body {
             height: 78px;
             font-size: 16px;
           }
+          @media screen and (width: 375px) {
+            width: 327px;
+            height: 130px;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -307,6 +385,9 @@ body {
       height: 140px;
       margin-top: 72px;
 
+      @media screen and (width: 375px) {
+        margin-top: 64px;
+      }
       .trait-deux {
         display: flex;
         flex-direction: column;
@@ -346,23 +427,35 @@ body {
       width: 1440px;
       height: 308px;
       background-image: url(/starter-code/assets/desktop/image-footer.jpg);
+      background-size: cover;
       background-repeat: no-repeat;
       mix-blend-mode: normal;
       color: #fafafa;
       @media screen and (width: 768px) {
-        // width: 1440px;
-        // height: 960px;
-        // background-size: cover;
+        height: 428px;
+        background-position: center;
+      }
+      @media screen and (width: 375px) {
+        height: 375px;
+        background-position: center;
       }
       .text-footer {
         background-color: rgba(77, 151, 169, 0.8);
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+        height: 308px;
         @media screen and (width: 768px) {
           flex-direction: column;
-          // width: 768px;
+          justify-content: space-around;
           height: 428px;
+        }
+        @media screen and (width: 375px) {
+          flex-direction: column;
+          justify-content: space-around;
+          height: 428px;
+          text-align: center;
         }
 
         h4 {
@@ -371,11 +464,18 @@ body {
           font-weight: 900;
           font-size: 40px;
           line-height: 44px;
-          // margin: 116px 125px 104px 165px;
           @media screen and (width: 768px) {
             width: 457px;
-            // margin-top: 64px;
-            text-align: center;
+            margin-top: 64px;
+            margin-bottom: 32px;
+          }
+          @media screen and (width: 375px) {
+            width: 327px;
+            height: 72px;
+            margin-top: 64px;
+            margin-bottom: 0;
+            font-size: 32px;
+            line-height: 36px;
           }
         }
         p {
@@ -384,11 +484,15 @@ body {
           font-weight: 500;
           font-size: 18px;
           line-height: 26px;
-          // margin: 116px 0px 114px 0px;
           @media screen and (width: 768px) {
             width: 573px;
             text-align: center;
             margin-top: 32px;
+          }
+          @media screen and (width: 375px) {
+            width: 327px;
+            height: 78px;
+            margin-top: 24px;
           }
         }
         button {
@@ -401,12 +505,15 @@ body {
           list-style: 26px;
           border-radius: 29px;
           border-style: none;
-          // margin: 131px 165px 119px 92px;
           @media screen and (width: 768px) {
-            width: 193px;
-            // margin-top: 58px;
             text-align: center;
-            // margin-top: 64px;
+            margin-top: 40px;
+            margin-bottom: 66px;
+          }
+          @media screen and (width: 375px) {
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 72px;
           }
           &:hover {
             background-color: #b18bdd;

@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
-  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 html main,
@@ -19,6 +20,9 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 1440px;
   height: 1895px;
   overflow: hidden;
@@ -29,6 +33,17 @@ body main {
   body main {
     width: 768px;
     height: 2128px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html main,
+  body main {
+    width: 375px;
+    height: 2215px;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
   }
 }
 
@@ -134,6 +149,49 @@ body main article.group :nth-child(3) {
   }
 }
 
+@media (max-width: 375px) {
+  html main article.group,
+  body main article.group {
+    margin-top: 54px;
+    width: auto;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html main article.group :nth-child(1),
+  body main article.group :nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 199px;
+    height: 153px;
+  }
+  html main article.group :nth-child(2),
+  body main article.group :nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 199px;
+    height: 153px;
+    margin-left: 16px;
+  }
+  html main article.group :nth-child(3),
+  body main article.group :nth-child(3) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 327px;
+    height: 88px;
+  }
+}
+
 html main article.group .group-chat,
 body main article.group .group-chat {
   display: -webkit-box;
@@ -149,9 +207,8 @@ body main article.group .group-chat {
   height: 304px;
   width: 540px;
   text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: 88px;
   margin-right: 88px;
 }
@@ -162,6 +219,18 @@ body main article.group .group-chat {
     width: 457px;
     height: 262px;
     margin-top: 72px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html main article.group .group-chat,
+  body main article.group .group-chat {
+    margin-top: 48px;
+    width: 375px;
+    height: auto;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
   }
 }
 
@@ -199,6 +268,16 @@ body main article.group .group-chat .text-chat h1 {
   }
 }
 
+@media screen and (width: 375px) {
+  html main article.group .group-chat .text-chat h1,
+  body main article.group .group-chat .text-chat h1 {
+    width: 327px;
+    height: 88px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
 html main article.group .group-chat .text-chat p,
 body main article.group .group-chat .text-chat p {
   font-weight: 500;
@@ -221,6 +300,17 @@ body main article.group .group-chat .text-chat p {
   }
 }
 
+@media screen and (width: 375px) {
+  html main article.group .group-chat .text-chat p,
+  body main article.group .group-chat .text-chat p {
+    width: 327px;
+    height: 78px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 24px;
+  }
+}
+
 html main article.group .group-chat .button-chat,
 body main article.group .group-chat .button-chat {
   display: -webkit-box;
@@ -228,6 +318,21 @@ body main article.group .group-chat .button-chat {
   display: flex;
   width: 348px;
   height: 58px;
+}
+
+@media screen and (width: 375px) {
+  html main article.group .group-chat .button-chat,
+  body main article.group .group-chat .button-chat {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 134px;
+    width: auto;
+    height: auto;
+  }
 }
 
 html main article.group .group-chat .button-chat button,
@@ -258,8 +363,8 @@ body main article.group .group-chat .button-chat button.download span {
   color: #8fe3f9;
 }
 
-html main article.group .group-chat .what,
-body main article.group .group-chat .what {
+html main article.group .group-chat button.what,
+body main article.group .group-chat button.what {
   background-color: #855fb1;
   width: 139px;
   height: 58px;
@@ -271,8 +376,15 @@ body main article.group .group-chat .what {
   border-style: none;
 }
 
-html main article.group .group-chat .what:hover,
-body main article.group .group-chat .what:hover {
+@media screen and (width: 375px) {
+  html main article.group .group-chat button.what,
+  body main article.group .group-chat button.what {
+    margin-top: 16px;
+  }
+}
+
+html main article.group .group-chat button.what:hover,
+body main article.group .group-chat button.what:hover {
   background-color: #b18bdd;
 }
 
@@ -287,6 +399,13 @@ body main .un {
   html main .un,
   body main .un {
     margin-top: 152px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html main .un,
+  body main .un {
+    margin-top: 64px;
   }
 }
 
@@ -361,6 +480,16 @@ body main .img-planch {
   }
 }
 
+@media screen and (width: 375px) {
+  html main .img-planch,
+  body main .img-planch {
+    width: 327px;
+    height: 310px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 html main .img-planch img,
 body main .img-planch img {
   background: #d8d8d8;
@@ -374,6 +503,14 @@ body main .img-planch img {
   body main .img-planch img {
     width: 164px;
     height: 156px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html main .img-planch img,
+  body main .img-planch img {
+    width: 151px;
+    height: 143px;
   }
 }
 
@@ -422,6 +559,15 @@ body main article.seconde-part div.text-second-part {
   }
 }
 
+@media screen and (width: 375px) {
+  html main article.seconde-part div.text-second-part,
+  body main article.seconde-part div.text-second-part {
+    width: 327px;
+    height: 284px;
+    margin-top: 48px;
+  }
+}
+
 html main article.seconde-part div.text-second-part p:nth-child(1),
 body main article.seconde-part div.text-second-part p:nth-child(1) {
   color: #4d96a9;
@@ -445,6 +591,17 @@ body main article.seconde-part div.text-second-part h2 {
   margin-top: 16px;
 }
 
+@media screen and (width: 375px) {
+  html main article.seconde-part div.text-second-part h2,
+  body main article.seconde-part div.text-second-part h2 {
+    width: 327px;
+    height: 72px;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+
 html main article.seconde-part div.text-second-part p:nth-child(3),
 body main article.seconde-part div.text-second-part p:nth-child(3) {
   width: 540px;
@@ -466,11 +623,27 @@ body main article.seconde-part div.text-second-part p:nth-child(3) {
   }
 }
 
+@media screen and (width: 375px) {
+  html main article.seconde-part div.text-second-part p:nth-child(3),
+  body main article.seconde-part div.text-second-part p:nth-child(3) {
+    width: 327px;
+    height: 130px;
+    font-size: 16px;
+  }
+}
+
 html main .deux,
 body main .deux {
   width: 56px;
   height: 140px;
   margin-top: 72px;
+}
+
+@media screen and (width: 375px) {
+  html main .deux,
+  body main .deux {
+    margin-top: 64px;
+  }
 }
 
 html main .deux .trait-deux,
@@ -531,9 +704,26 @@ body main footer {
   width: 1440px;
   height: 308px;
   background-image: url(/starter-code/assets/desktop/image-footer.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   mix-blend-mode: normal;
   color: #fafafa;
+}
+
+@media screen and (width: 768px) {
+  html main footer,
+  body main footer {
+    height: 428px;
+    background-position: center;
+  }
+}
+
+@media screen and (width: 375px) {
+  html main footer,
+  body main footer {
+    height: 375px;
+    background-position: center;
+  }
 }
 
 html main footer .text-footer,
@@ -549,6 +739,9 @@ body main footer .text-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 308px;
 }
 
 @media screen and (width: 768px) {
@@ -558,7 +751,23 @@ body main footer .text-footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 428px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html main footer .text-footer,
+  body main footer .text-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 428px;
+    text-align: center;
   }
 }
 
@@ -575,7 +784,20 @@ body main footer .text-footer h4 {
   html main footer .text-footer h4,
   body main footer .text-footer h4 {
     width: 457px;
-    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html main footer .text-footer h4,
+  body main footer .text-footer h4 {
+    width: 327px;
+    height: 72px;
+    margin-top: 64px;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
@@ -597,6 +819,15 @@ body main footer .text-footer p {
   }
 }
 
+@media screen and (width: 375px) {
+  html main footer .text-footer p,
+  body main footer .text-footer p {
+    width: 327px;
+    height: 78px;
+    margin-top: 24px;
+  }
+}
+
 html main footer .text-footer button,
 body main footer .text-footer button {
   width: 193px;
@@ -613,8 +844,18 @@ body main footer .text-footer button {
 @media screen and (width: 768px) {
   html main footer .text-footer button,
   body main footer .text-footer button {
-    width: 193px;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html main footer .text-footer button,
+  body main footer .text-footer button {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 72px;
   }
 }
 
