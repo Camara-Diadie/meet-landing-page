@@ -1,10 +1,10 @@
-$bleu-turqoise:#4d96a9;
-$bleu-turqoise-clair:#8fe3f9;
-$bleu-adroise:#855fb1;
-$bleu-adroise-clair:#d9b8ff;
-$bleu-gris:#28283d;
-$gris:#87879d;
-$blanc:#fafafa;
+$bleu-turqoise: #4d96a9;
+$bleu-turqoise-clair: #8fe3f9;
+$bleu-adroise: #855fb1;
+$bleu-adroise-clair: #d9b8ff;
+$bleu-gris: #28283d;
+$gris: #87879d;
+$blanc: #fafafa;
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap");
 // media desktop 1440px
 // media query tablette 768px
@@ -468,6 +468,7 @@ body {
             width: 457px;
             margin-top: 64px;
             margin-bottom: 32px;
+            text-align: center;
           }
           @media screen and (width: 375px) {
             width: 327px;
