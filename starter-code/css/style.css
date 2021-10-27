@@ -703,7 +703,7 @@ html main footer,
 body main footer {
   width: 1440px;
   height: 308px;
-  background-image: url(/starter-code/assets/desktop/image-footer.jpg);
+  background-image: url(starter-code/assets/desktop/image-footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   mix-blend-mode: normal;
